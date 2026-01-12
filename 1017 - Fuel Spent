@@ -1,0 +1,13 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+ 
+int main() {
+    int a,b;
+    cin >> a >> b;
+    int distance = a * b;
+    double fuel_needed = distance/12.0;
+    cout << fixed <<setprecision(3);
+    cout << fuel_needed << endl;
+    return 0;
+}
