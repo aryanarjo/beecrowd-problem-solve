@@ -1,0 +1,24 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+using namespace std;
+ 
+int main() {
+    double A,B,C;
+    const double pi=3.14159;
+    cin >> A >> B >> C;
+    double triangle = (A * C)/2.0;
+    double circle = pi * pow(C,2);
+    double trapezium = ((A + B) * C)/2.0;
+    double square = pow(B,2);
+    double rectangle = A * B;
+    
+    cout << fixed << setprecision(3);
+    cout << "TRIANGULO: " << triangle << endl;
+    cout << "CIRCULO: " << circle << endl;
+    cout << "TRAPEZIO: " << trapezium << endl;
+    cout << "QUADRADO: " << square << endl;
+    cout << "RETANGULO: " << rectangle << endl;
+   
+    return 0;
+}
