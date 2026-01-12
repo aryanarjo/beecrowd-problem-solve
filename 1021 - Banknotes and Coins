@@ -1,0 +1,39 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+ 
+int main() {
+    double N;
+    cin >> N;
+    int amount = round(N * 100);
+    
+    cout << "NOTAS:" << endl;
+    cout << amount/10000 << " nota(s) de R$ 100.00" << endl;
+    amount %= 10000;
+    cout << amount/5000 << " nota(s) de R$ 50.00" << endl;
+    amount %= 5000;
+    cout << amount/2000 << " nota(s) de R$ 20.00" << endl;
+    amount %= 2000;
+    cout << amount/1000 << " nota(s) de R$ 10.00" << endl;
+    amount %= 1000;
+    cout << amount/500 << " nota(s) de R$ 5.00" << endl;
+    amount %= 500;
+    cout << amount/200 << " nota(s) de R$ 2.00" << endl;
+    amount %= 200;
+    
+    cout << "MOEDAS:" <<endl;
+    cout << amount/100 << " moeda(s) de R$ 1.00" << endl;
+    amount %= 100;
+    cout << amount/50 << " moeda(s) de R$ 0.50" << endl;
+    amount %= 50;
+    cout << amount/25 << " moeda(s) de R$ 0.25" << endl;
+    amount %= 25;
+    cout << amount/10 << " moeda(s) de R$ 0.10" << endl;
+    amount %= 10;
+    cout << amount/5 << " moeda(s) de R$ 0.05" << endl;
+    amount %= 5;
+    cout << amount/1 << " moeda(s) de R$ 0.01" << endl;
+    amount %= 1;
+   
+    return 0;
+}
