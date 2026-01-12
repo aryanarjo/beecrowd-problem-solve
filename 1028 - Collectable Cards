@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int gcd (int a, int b){
+    while (b != 0){
+        int temp = b;
+        b = a % b;
+        a = temp;
+    }
+    return a;
+}
+ 
+int main() {
+    int N;
+    cin >> N;
+    while (N --) {
+        int F1, F2;
+        cin >> F1 >> F2;
+        cout << gcd(F1,F2) << endl;
+    }
+    
+    return 0;
+}
