@@ -1,0 +1,35 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+ 
+int main() {
+    int X,Y;
+    cin >> X >> Y;
+    double total = 0.0;
+    
+    switch(X){
+        case 1:
+        total = Y * 4.00;
+        break;
+        case 2:
+        total = Y * 4.50;
+        break;
+        case 3:
+        total = Y * 5.00;
+        break;
+        case 4:
+        total = Y * 2.00;
+        break;
+        case 5:
+        total = Y * 1.50;
+        break;
+        default:
+        cout << "Invalid Product Code!" << endl;
+        return 1;
+    }
+    
+   cout << fixed << setprecision(2);
+   cout << "Total: R$ " << total << endl;
+ 
+    return 0;
+}
